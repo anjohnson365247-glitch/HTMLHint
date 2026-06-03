@@ -1,55 +1,232 @@
----
-title: Getting Started
-description: How to set up HTMLHint in your project by adding it as a dev dependency and configuring it.
----
+<div class="w-100" style="display: block; clear: both;">
+<div class="tab-content w-100">
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+    <div class="tab-pane active show fade" id="Landing">
+        <div class="card p-3 text-center mt-5 mx-auto" style="border-radius: 20px; width:150px; background-color: #bfc7c8; border: 4px outset #fff; box-shadow: 2px 2px 10px rgba(0,0,0,0.5);">
+            <div class="nav nav-tabs card-header-tabs border-0">
+                <a class="m-auto text-reset" data-toggle="tab" href="#web" style="font-size:50px;">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </a>
+            </div>
+            <div class="mt-3" style="color:#000; font-family: monospace;">
+                <strong><em>Booting...</em></strong>
+            </div>
+        </div>
+    </div>
 
-HTMLHint requires Node.js 20 or later.
+    <div class="tab-pane active show fade" id="web">
+        <div class="p-3" style="background-color:#008284; margin:-15px; color:#000; font-family: monospace; min-height:950px;">
+            
+            <div class="row no-gutters">
+                
+                <div class="col-md-4 col-12 p-2">
+                    
+                    <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff;" class="p-1 mb-3">
+                        <div style="background-color:#0000a7; font-size:10px; letter-spacing:0.5px; padding:1.5px; color:#fff">
+                            <img src="https://file.garden/ZU1BgQx2nVLn6KQa/WINDOWS%2095/Painting-1.png" style="width:13px"> pfp.jpg
+                            <div class="row no-gutters pull-right">
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">_</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">□</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col"><p style="margin-top:-2.5px">x</p></div>
+                            </div>
+                        </div>
+                        <div style="height:180px; background-size:cover; background-position:center; border: 2px inset; border-color: #000 #fff #fff #000; background-image:url('https://via.placeholder.com/500/ececec')" class="mt-1"></div>
+                    </div>
 
-1\. Use npm or yarn to install HTMLHint:
+                    <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; font-size:13px;" class="p-1">
+                        <div style="background-color:#0000a7; font-size:10px; letter-spacing:0.5px; padding:1.5px; color:#fff" class="mb-1">
+                            <img src="https://file.garden/ZU1BgQx2nVLn6KQa/WINDOWS%2095/HTML.png" style="width:13px"> userdata.html
+                            <div class="row no-gutters pull-right">
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">_</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">□</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col"><p style="margin-top:-2.5px">x</p></div>
+                            </div>
+                        </div>
+                        <div class="p-1 mt-1" style="max-height:280px; overflow:auto; font-size:13px">
+                            <div class="row no-gutters mb-1">
+                                <div class="col-4 pr-1"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">NAME</div></div>
+                                <div class="col-8"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">content</div></div>
+                            </div>
+                            <div class="row no-gutters mb-1">
+                                <div class="col-4 pr-1"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">AGE</div></div>
+                                <div class="col-8"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">##</div></div>
+                            </div>
+                            <div class="row no-gutters mb-1">
+                                <div class="col-4 pr-1"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">PRONOUNS</div></div>
+                                <div class="col-8"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">cont/ent</div></div>
+                            </div>
+                            <div class="row no-gutters mb-1">
+                                <div class="col-4 pr-1"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">TIMEZONE</div></div>
+                                <div class="col-8"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">content</div></div>
+                            </div>
+                            <div class="row no-gutters"><div class="col-auto"> COMM STATUS </div><div class="col ml-2"> <hr style="border-color:#000; margin-top:9px; border-width:1.5px"> </div></div>
+                            <div class="row no-gutters mb-1">
+                                <div class="col-4 pr-1"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">COMMS</div></div>
+                                <div class="col-8"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">OPEN</div></div>
+                            </div>
+                            <div class="row no-gutters mb-1">
+                                <div class="col-4 pr-1"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">ATs</div></div>
+                                <div class="col-8"><div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000;" class="p-1">ASK</div></div>
+                            </div>
+                            <div class="mt-2 text-center">
+                                <a href="COMM_INFO_LINK" class="text-reset">COMM INFO</a> &nbsp;|&nbsp;
+                                <a href="TOS_LINK" class="text-reset">TOS</a> &nbsp;|&nbsp;
+                                <a href="QUEUE_LINK" class="text-reset">QUEUE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<Tabs>
-  <TabItem label="npm">
-`npm install --save-dev htmlhint`
-  </TabItem>
-  <TabItem label="yarn">
-`yarn add --dev htmlhint`
-  </TabItem>
-</Tabs>
+                <div class="col-md-8 col-12 p-2">
+                    
+                    <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; font-size:13px" class="p-1 mb-3">
+                        <div style="background-color:#0000a7; font-size:10px; letter-spacing:0.5px; padding:1.5px; color:#fff" class="mb-1">
+                            <img src="https://file.garden/ZU1BgQx2nVLn6KQa/WINDOWS%2095/Notepad-2.png" style="width:13px"> About Me - Notes
+                            <div class="row no-gutters pull-right">
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">_</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">□</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col"><p style="margin-top:-2.5px">x</p></div>
+                            </div>
+                        </div>
+                        File &nbsp; Edit &nbsp; Search &nbsp; Help
+                        <div class="p-2 mt-1" style="height:150px; overflow:auto; background-color:#fff; color:#000; font-size:13px; border: 2px inset; border-color: #000 #fff #fff #000;">
+                            Just write about yourself here :) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio.
+                        </div>
+                    </div>
 
-2\. Create a `.htmlhintrc` configuration file in the root of your project with `htmlhint --init`. This will create a file with default rules. You can customize it as needed. For example, you can use the following configuration to enforce some common best practices:
+                    <div class="row no-gutters mb-3 align-items-start">
+                        <div class="col p-0">
+                            <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; font-size:13px; position: relative;" class="p-1">
+                                <div style="background-color:#0000a7; font-size:10px; letter-spacing:0.5px; padding:1.5px; color:#fff" class="mb-1">
+                                    <img src="https://file.garden/ZU1BgQx2nVLn6KQa/WINDOWS%2095/HTML.png" style="width:13px"> cdplayer.exe
+                                    <div class="row no-gutters pull-right">
+                                        <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">_</p></div>
+                                        <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">□</p></div>
+                                        <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col"><p style="margin-top:-2.5px">x</p></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="p-1 mt-1" style="height:150px; overflow:hidden; font-size:13px; background-color:#fff; border: 2px inset; border-color: #000 #fff #fff #000;">
+                                    <div id="carousel" class="carousel slide" data-pause="true">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <center>
+                                                <div class="mt-2" style="color:#000; font-weight:bold;">song name<br><span style="font-weight:normal; font-size:11px;">artist</span></div>
+                                                <div class="progress mt-2 mb-1 rounded-0" style="height:4px; width:170px; overflow:visible; background-color:#bfc7c8; border: 1px inset; border-color: #000 #fff #fff #000;">
+                                                    <div class="progress-bar" style="height:100%; width:64%; background-color:#0000a7;"></div>
+                                                    <div class="shadow" style="background-color:#000; height:8px; width:4px; margin:-3px 0 0 -2px; border-radius:0;"></div>
+                                                </div>
+                                                <div class="d-flex justify-content-between small mb-1" style="width:170px; color:#000; font-size:10px;"><span>3:32</span><span>5:29</span></div>
+                                                <div style="font-size:14px; color:#000;"><i class="fa-solid fa-play"></i></div>
+                                                <div class="w-100" style="position:relative; margin-top:-70px; margin-bottom:-25px; height:100px; overflow:visible;">
+                                                    <iframe src="https://www.youtube.com/embed/nee9d0wqBTQ?controls=0" class="w-100" style="position:absolute; top:-140px; left:0; height:400px; opacity:0.001" frameborder="0"></iframe>
+                                                </div>
+                                            </center>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <center>
+                                                <div class="mt-2" style="color:#000; font-weight:bold;">ur so pretty<br><span style="font-weight:normal; font-size:11px;">wasia project</span></div>
+                                                <div class="progress mt-2 mb-1 rounded-0" style="height:4px; width:170px; overflow:visible; background-color:#bfc7c8; border: 1px inset; border-color: #000 #fff #fff #000;">
+                                                    <div class="progress-bar" style="height:100%; width:26%; background-color:#0000a7;"></div>
+                                                    <div class="shadow" style="background-color:#000; height:8px; width:4px; margin:-3px 0 0 -2px; border-radius:0;"></div>
+                                                </div>
+                                                <div class="d-flex justify-content-between small mb-1" style="width:170px; color:#000; font-size:10px;"><span>0:35</span><span>2:24</span></div>
+                                                <div style="font-size:14px; color:#000;"><i class="fa-solid fa-play"></i></div>
+                                                <div class="w-100" style="position:relative; margin-top:-70px; margin-bottom:-25px; height:100px; overflow:visible;">
+                                                    <iframe src="https://www.youtube.com/embed/_k2XcLsxXnw?controls=0" class="w-100" style="position:absolute; top:-140px; left:0; height:400px; opacity:0.001" frameborder="0"></iframe>
+                                                </div>
+                                            </center>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <center>
+                                                <div class="mt-2" style="color:#000; font-weight:bold;">je te laisserai des mots<br><span style="font-weight:normal; font-size:11px;">patrick watson</span></div>
+                                                <div class="progress mt-2 mb-1 rounded-0" style="height:4px; width:170px; overflow:visible; background-color:#bfc7c8; border: 1px inset; border-color: #000 #fff #fff #000;">
+                                                    <div class="progress-bar" style="height:100%; width:86%; background-color:#0000a7;"></div>
+                                                    <div class="shadow" style="background-color:#000; height:8px; width:4px; margin:-3px 0 0 -2px; border-radius:0;"></div>
+                                                </div>
+                                                <div class="d-flex justify-content-between small mb-1" style="width:170px; color:#000; font-size:10px;"><span>2:22</span><span>2:41</span></div>
+                                                <div style="font-size:14px; color:#000;"><i class="fa-solid fa-play"></i></div>
+                                                <div class="w-100" style="position:relative; margin-top:-70px; margin-bottom:-25px; height:100px; overflow:visible;">
+                                                    <iframe src="https://www.youtube.com/embed/mcdO9UP0hp8?controls=0" class="w-100" style="position:absolute; top:-140px; left:0; height:400px; opacity:0.001" frameborder="0"></iframe>
+                                                </div>
+                                            </center>
+                                          </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carousel" data-slide="prev" style="width:15%; opacity:1;"><i class="fas fa-backward" style="color:#000 !important; font-size:12px;"></i></a>
+                                        <a class="carousel-control-next" href="#carousel" data-slide="next" style="width:15%; opacity:1;"><i class="fas fa-forward" style="color:#000 !important; font-size:12px;"></i></a>
+                                    </div>
+                                </div>
+                                <a class="tooltipster text-secondary" title="music code by grassman" href="https://toyhou.se/27701781.f2u-snippet-music-carousel" style="position: absolute; bottom: 4px; right: 8px; font-size: 10px; opacity: 0.6; color:#000!important;"><i class="far fa-code"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-auto pl-2">
+                            <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; width:40px; height:40px; display:flex; align-items:center; justify-content:center;">
+                                <a href="https://toyhou.se/clowniicat" class="text-reset"><i class="fas fa-code" style="font-size:16px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
-```json
-{
-  "alt-require": true,
-  "attr-lowercase": true,
-  "attr-no-duplication": true,
-  "attr-value-double-quotes": true,
-  "attr-value-no-duplication": true,
-  "button-type-require": true,
-  "doctype-first": true,
-  "doctype-html5": true,
-  "frame-title-require": true,
-  "h1-require": true,
-  "html-lang-require": true,
-  "id-unique": true,
-  "input-requires-label": true,
-  "main-require": true,
-  "meta-charset-require": true,
-  "meta-description-require": true,
-  "meta-viewport-require": true,
-  "spec-char-escape": true,
-  "src-not-empty": true,
-  "tag-no-obsolete": true,
-  "tag-pair": true,
-  "tagname-lowercase": true,
-  "title-require": true
-}
-```
+                    <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; font-size:13px" class="p-1 mb-3">
+                        <div style="background-color:#0000a7; font-size:10px; letter-spacing:0.5px; padding:1.5px; color:#fff" class="mb-1">
+                            <img src="https://file.garden/ZU1BgQx2nVLn6KQa/WINDOWS%2095/Program-1.png" style="width:13px"> favs.exe
+                            <div class="row no-gutters pull-right">
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">_</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">□</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col"><p style="margin-top:-2.5px">x</p></div>
+                            </div>
+                        </div>
+                        <div class="p-1 mt-1 pb-4" style="height:170px; font-size:13px">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="charsWINDOWS">
+                                    <div class="row no-gutters flex-nowrap" style="overflow-x:auto; overflow-y:hidden; height:125px">
+                                        <div class="col-auto text-center mr-1" style="width:152px">
+                                            <div style="height:100px; border: 2px inset; border-color: #000 #fff #fff #000; width:150px; background-position:center; background-size:cover; background-image:url('https://via.placeholder.com/500/ececec')"></div>
+                                            <a href="LINK_TO_CHARACTER" class="text-reset">NAME</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="friendsWINDOWS">
+                                    <div class="row no-gutters flex-nowrap" style="overflow-x:auto; overflow-y:hidden; height:125px">
+                                        <div class="col-auto text-center mr-1" style="width:152px">
+                                            <div style="height:100px; border: 2px inset; border-color: #000 #fff #fff #000; width:150px; background-position:center; background-size:cover; background-image:url('https://via.placeholder.com/500/ececec')"></div>
+                                            <a href="LINK_TO_PERSON" class="text-reset">NAME</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav nav-tabs border-0 row no-gutters">
+                                <li class="col-6 pr-1">
+                                    <p style="height:30px; z-index:2; border: 2px outset; border-color: #fff #000 #000 #fff" class="p-1 text-center">CHARACTERS</p>
+                                    <a class="btn rounded-0 border-0 btn-block btn-outline-secondary active" data-toggle="tab" href="#charsWINDOWS" style="height:30px; margin-top:-30px; z-index:5; mix-blend-mode:multiply; filter: saturate(0%); opacity:.25"></a>
+                                </li>
+                                <li class="col-6 pl-1">
+                                    <p style="height:30px; z-index:2; border: 2px outset; border-color: #fff #000 #000 #fff" class="p-1 text-center">FRIENDS</p>
+                                    <a class="btn rounded-0 border-0 btn-block btn-outline-secondary" data-toggle="tab" href="#friendsWINDOWS" style="height:30px; margin-top:-30px; z-index:5; mix-blend-mode:multiply; filter: saturate(0%); opacity:.25"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-3\. Run HTMLHint on, for example, all the HTML files in your project:
+                    <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; font-size:13px" class="p-1">
+                        <div style="background-color:#0000a7; font-size:10px; letter-spacing:0.5px; padding:1.5px; color:#fff" class="mb-1">
+                            <img src="https://file.garden/ZU1BgQx2nVLn6KQa/WINDOWS%2095/Notepad-2.png" style="width:13px"> DNI & BYI - Notes
+                            <div class="row no-gutters pull-right">
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">_</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col mr-1"><p style="margin-top:-2.5px">□</p></div>
+                                <div style="background-color:#bfc7c8; border: 2px outset; border-color: #fff #000 #000 #fff; color:#000; text-align:center; padding-left:3px; padding-right:3px; max-height:15px" class="col"><p style="margin-top:-2.5px">x</p></div>
+                            </div>
+                        </div>
+                        File &nbsp; Edit &nbsp; Search &nbsp; Help
+                        <div class="p-2 mt-1" style="height:120px; overflow:auto; background-color:#fff; font-size:13px; border: 2px inset; border-color: #000 #fff #fff #000;">
+                            DNI: Content here.
+                            <hr style="border-color:#000; border-width:1.5px" class="my-1">
+                            BYI: Content here.
+                        </div>
+                    </div>
 
-```shell
-npx htmlhint "**/*.html"
-```
+                </div> </div> </div>
+    </div>
+
+</div>
+</div>
